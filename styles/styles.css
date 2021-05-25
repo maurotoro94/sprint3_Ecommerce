@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    background-color: rgb(46, 43, 43);
+    color:yellow;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    
+}
+
+header div{
+    align-content:center;
+}
+
+header h1{
+    flex: 1 1 20em;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+
+.sub-indice{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    align-items:center;
+}
+
+.topnav a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.topnav a:hover{
+    background-color: gray;
+}
+
+.sub-indice .logo-compras{
+    margin-right: 20px;
+}
+
+.contenedorSlider{
+    margin-bottom: 70px;
+}
+
+.contenedorSlider .contenedor-principal{
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+
+.flecha-izq , .flecha-der{
+
+    position: absolute;
+    border:none;
+    background: rgba(240, 243, 243, 0.3);
+    font-size:40px;
+    height:50%;
+    top:calc(50% -25%);
+    line-height:40px;
+    width:50px;
+    cursor:pointer;
+    color:white;
+    z-index: 500;
+    transition: 0.2s ease all;
+}
+
+.flecha-izq {
+    left: 0;   
+}
+
+.flecha-der{
+    right: 0;
+}
+
+.flecha-izq:hover, .flecha-der:hover{
+    background: rgba(56, 70, 70, 0.9);
+}
+
+.contenedor-principal .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-principal .contenedor-carousel .carousel .motos{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+.contenedor-principal .contenedor-carousel .carousel .motos{
+    min-width: 100%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+} 
+
+.contenedor-principal .contenedor-carousel .carousel .imagenCarousel{
+   width: 95%;
+   vertical-align: top;
+}
+
+.flex-principal-marcas{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;   
+}
+
+.flex-principal-marcas h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.flex-principal-marcas .nuestrasMarcas{
+    padding-top: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.flex-principal-marcas .nuestrasMarcas div{
+    margin: 20px 10px 20px 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.flex-principal-marcas .nuestrasMarcas div h3{
+    text-align: center;
+    margin-bottom:10px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.flex-principal-marcas .nuestrasMarcas div img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.flex-principal-marcas .productosVenta{
+    padding-top: 30px;
+    padding-left: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-principal-marcas .productosVenta div{
+    margin:10px 10px 10px 10px;
+    text-align: center;
+    min-width: 33%;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background-color: #4caf4f5d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .flex-principal-marcas .flexConocenos{
+    padding-top: 30px;
+    padding-left: 30px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+    .flex-principal-marcas .flexConocenos img{
+        width:100%;
+        height:auto;
+  }
+
+  .flex-principal-marcas .flexConocenos .cuerpo{
+      margin-left: 10px;
+      margin-right:20px;
+      text-align:center ;
+      }
+ 
+  footer{
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    margin-top:20px;
+    text-align: center;
+    margin-bottom:0px;
+}
